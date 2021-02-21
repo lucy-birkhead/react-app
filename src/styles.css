@@ -59,7 +59,7 @@ ul {
 }
 
 .github {
-  float: center;
+  text-align: center;
   padding-left: 3rem;
 }
 

@@ -45,7 +45,7 @@ export default function App() {
       <br />{" "}
       <a
         className="github"
-        href="https://github.com/lucy-birkhead/Weather-App-SheCodes"
+        href="https://github.com/lucy-birkhead/react-app"
       >
         Weather App Github Repository
       </a>{" "}
