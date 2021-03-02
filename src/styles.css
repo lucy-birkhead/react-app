@@ -44,10 +44,6 @@ li {
   font-size: 15px;
 }
 
-a {
-  text-align: center;
-}
-
 #fahrenheit-link {
   font-size: 1rem;
 }
@@ -70,7 +66,6 @@ a {
 
 .github {
   text-align: center;
-  padding-left: 3rem;
 }
 
 .weather-app-wrapper {
