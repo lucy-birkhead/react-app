@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./styles.css";
 
@@ -12,7 +13,7 @@ function handleResponse(response) {
     ready: true,
     temperature: response.data.main.temp,
     humidity: response.data.main.humidity,
-    date: "Wednesday 07:00",
+    date: new Date(response.data.dt * 1000),
     description: response.data.weather[0].description,
     iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
     wind: response.data.wind.speed,
@@ -41,7 +42,11 @@ if (weatherData.ready) {
         </form>
       </div>{" "}
       <br /> <h1 id="city">{weatherData.city}</h1> 
-      <br /> <p>{weatherData.date}</p> 
+      <ul>
+        <li className="date">
+          <FormattedDate date={weatherData.date} />
+        </li>
+      </ul>
       <h2>Current Conditions:</h2>{" "}
       <h4 id="description" className="text-capitalize">
         <em>{weatherData.description}</em>
@@ -72,7 +77,7 @@ if (weatherData.ready) {
         href="https://github.com/lucy-birkhead/react-app"
       >
         React Weather App Github Repository
-      </a>{" "}
+      </a>
       <p>Coded by Lucy B.</p>
     </div>
   );

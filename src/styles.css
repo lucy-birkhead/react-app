@@ -38,6 +38,16 @@ ul {
   position: static;
 }
 
+li {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+}
+
+a {
+  text-align: center;
+}
+
 #fahrenheit-link {
   font-size: 1rem;
 }
@@ -69,3 +79,4 @@ ul {
   border-width: 3px;
   margin: 10px 30px 10px 30px;
 }
+
