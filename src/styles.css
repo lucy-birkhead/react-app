@@ -65,7 +65,7 @@ li {
 }
 
 .github {
-  text-align: center;
+  display: block;
 }
 
 .weather-app-wrapper {
