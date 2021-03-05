@@ -27,7 +27,7 @@ function handleResponse(response) {
 
 function search() {
   const apiKey = "19e635cfd49a09267430a421d97c1f42";
-  let city = "Corrales";
+  
   let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
 }

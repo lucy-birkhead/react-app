@@ -35,12 +35,14 @@ export default function WeatherInfo(props) {
       </h3>
     </div>
     <br />{" "}
+    <p>
     <a
       className="github"
       href="https://github.com/lucy-birkhead/react-app"
     >
       React Weather App Github Repository
     </a>
+    </p>
     <p>Coded by Lucy B.</p>
   </div>
   
