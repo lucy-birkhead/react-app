@@ -26,25 +26,17 @@ export default function WeatherInfo(props) {
         celsius={props.data.temperature} />
        
         <ul className="standard-text">
-          <li>
-            Humidity: <span id="humidity">{props.data.humidity}</span>%
+          <li className="humidity">
+            Humidity: <span>{props.data.humidity}</span>%
           </li>
-          <li>
-            Wind: <span id="wind">{props.data.wind}</span> km/h
+          <li className="wind">
+            Wind: <span>{props.data.wind}</span> km/h
           </li>
         </ul>
       </h3>
     </div>
     <br />{" "}
-    <p>
-    <a
-      className="github"
-      href="https://github.com/lucy-birkhead/react-app"
-    >
-      React Weather App Github Repository
-    </a>
-    </p>
-    <p>Coded by Lucy B.</p>
+    
   </div>
   
   );

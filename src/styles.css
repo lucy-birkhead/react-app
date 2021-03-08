@@ -36,6 +36,7 @@ p {
 ul {
   list-style-type: none;
   position: static;
+  padding: 0;
 }
 
 li {
@@ -75,3 +76,14 @@ li {
   margin: 10px 30px 10px 30px;
 }
 
+.enterCity {
+  margin-right: 10px;
+}
+
+.humidity {
+  padding-left: 40px;
+}
+
+.wind {
+  padding-left: 40px;
+}

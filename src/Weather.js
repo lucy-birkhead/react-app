@@ -65,7 +65,17 @@ if (weatherData.ready) {
       </div>
       <WeatherInfo data={weatherData}/>
       <WeatherForecast city={weatherData.city}/>
+      <p>
+    <a
+      className="github"
+      href="https://github.com/lucy-birkhead/react-app"
+    >
+      React Weather App Github Repository
+    </a>
+    </p>
+    <p>Coded by Lucy B.</p>
     </div>
+    
   )
   } else {
   search();
